@@ -7,6 +7,7 @@ body {
 // Global Header
 header.global-header {
     background: #f3f3f1;
+    border-bottom: 1px solid #B1B1B1;
 
     .navbar {
         margin: 0;
@@ -21,6 +22,10 @@ header.global-header {
     .brand {
         line-height: 40px;
         margin-right: 50px;
+
+        font-family: @fontsans;
+        font-weight: 400;
+        text-shadow: none;
     }
 
     ul.nav {
@@ -28,6 +33,7 @@ header.global-header {
 
         li {
             a {
+                .text-shadow (none);
                 padding: 20px 22px;
                 color: #404956;
 
@@ -35,6 +41,11 @@ header.global-header {
                     background: rgba(0,0,0,0.1);
                     color: inherit;
                 }
+            }
+
+            &.dropdown.open a.dropdown-toggle, &.dropdown.active a.dropdown-toggle {
+                background: rgba(0,0,0,0.2);
+                color: inherit;
             }
         }
 
@@ -65,15 +76,28 @@ section.homepage-content {
             text-align: center;
             margin-left: 10px;
             margin-right: 10px;
-        }
-        h2 {
-            font-weight: normal;
-            text-align: center;
-        }
-        .span4 p {
-            font-size: 16px;
-            line-height: 27px;
-            color: #888;
+
+            h2 {
+                font-weight: normal;
+                text-align: center;
+            }
+            p {
+                font-size: 16px;
+                line-height: 27px;
+                color: #888;
+            }
+
+            .btn {
+                padding: 10px 19px;
+                background: #E0E0E0;
+                font-size: 16px;
+
+                &:hover {
+                    .transition (.25s);
+                    background: lighten(#E0E0E0, 5%);
+                    .box-shadow (0 1px 18px -3px rgba(0, 125, 195, 0.8));
+                }
+            }
         }
     }
 }

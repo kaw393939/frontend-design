@@ -26,6 +26,7 @@
 }
 header.global-header {
   background: #f3f3f1;
+  border-bottom: 1px solid #B1B1B1;
 }
 header.global-header .navbar {
   margin: 0;
@@ -40,16 +41,27 @@ header.global-header .navbar .navbar-inner {
 header.global-header .brand {
   line-height: 40px;
   margin-right: 50px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  text-shadow: none;
 }
 header.global-header ul.nav {
   float: left;
 }
 header.global-header ul.nav li a {
+  -webkit-text-shadow: none;
+  -moz-text-shadow: none;
+  text-shadow: none;
   padding: 20px 22px;
   color: #404956;
 }
 header.global-header ul.nav li a:hover {
   background: rgba(0, 0, 0, 0.1);
+  color: inherit;
+}
+header.global-header ul.nav li.dropdown.open a.dropdown-toggle,
+header.global-header ul.nav li.dropdown.active a.dropdown-toggle {
+  background: rgba(0, 0, 0, 0.2);
   color: inherit;
 }
 header.global-header ul.nav ul.dropdown-menu {
@@ -77,7 +89,7 @@ section.homepage-content .container.marketing .span4 {
   margin-left: 10px;
   margin-right: 10px;
 }
-section.homepage-content .container.marketing h2 {
+section.homepage-content .container.marketing .span4 h2 {
   font-weight: normal;
   text-align: center;
 }
@@ -85,6 +97,22 @@ section.homepage-content .container.marketing .span4 p {
   font-size: 16px;
   line-height: 27px;
   color: #888;
+}
+section.homepage-content .container.marketing .span4 .btn {
+  padding: 10px 19px;
+  background: #E0E0E0;
+  font-size: 16px;
+}
+section.homepage-content .container.marketing .span4 .btn:hover {
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  background: #ededed;
+  -webkit-box-shadow: 0 1px 18px -3px rgba(0, 125, 195, 0.8);
+  -moz-box-shadow: 0 1px 18px -3px rgba(0, 125, 195, 0.8);
+  box-shadow: 0 1px 18px -3px rgba(0, 125, 195, 0.8);
 }
 footer.global-header {
   padding: 30px 0;
