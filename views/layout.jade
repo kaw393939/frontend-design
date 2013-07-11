@@ -6,9 +6,12 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     link(rel='stylesheet', href='/stylesheets/bootstrap.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato:300,400|Droid+Serif:400,700,400italic,700italic')
   body
+    include shared/header
     block content
-
+    include shared/footer
+    
     script(src='http://code.jquery.com/jquery-2.0.3.min.js')
     script(src='javascripts/bootstrap.js')
     script(src='javascripts/holder.js')

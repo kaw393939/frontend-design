@@ -1,8 +1,6 @@
 extends layout
 
 block content
-    include shared/header
-    
     #myCarousel.carousel.slide
       .carousel-inner
         .item.active
@@ -33,45 +31,33 @@ block content
     // .carousel 
     // Marketing messaging and featurettes
     // Wrap the rest of the page in another container to center all the content. 
-    .container.marketing
-      // Three columns of text below the carousel 
-      .row
-        .span4
-          img#design(src='img/design.png', alt='', width='140px', height='140px')
-          h2 Design
-          p
-            | Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-          p
-            a.btn(href='#') View details »
-        // .span4 
-        .span4
-          a(href='#')
-            img#develop(src='img/develop.png', alt='', width='140px', height='140px')
-          h2 Develop
-          p
-            | Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-          p
-            a.btn(href='#') View details »
-        // .span4 
-        .span4
-          a(href='#')
-            img#connect(src='img/connect.png', alt='', width='140px', height='140px')
-          h2 Connect
-          p
-            | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-          p
-            a.btn(href='#') View details »
-        // .span4 
-      //.row 
-      //
-         START THE FEATURETTES 
-      hr.featurette-divider
 
-      footer
-        p.pull-right
-          a(href='#') Back to top
-        p
-          | © 2013 Company, Inc. ·
-          a(href='#') Privacy
-          | ·
-          a(href='#') Terms
+    section.homepage-content
+      .container.marketing
+        // Three columns of text below the carousel 
+        .row
+          .span4
+            img#design(src='img/design.png', alt='', width='140px', height='140px')
+            h2 Design
+            p
+              | Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+            p
+              a.btn(href='#') View details »
+          // .span4 
+          .span4
+            a(href='#')
+              img#develop(src='img/develop.png', alt='', width='140px', height='140px')
+            h2 Develop
+            p
+              | Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+            p
+              a.btn(href='#') View details »
+          // .span4 
+          .span4
+            a(href='#')
+              img#connect(src='img/connect.png', alt='', width='140px', height='140px')
+            h2 Connect
+            p
+              | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+            p
+              a.btn(href='#') View details »

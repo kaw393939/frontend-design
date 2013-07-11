@@ -59,12 +59,39 @@ header.global-header ul.nav ul.dropdown-menu {
 header.global-header ul.nav ul.dropdown-menu a {
   padding: 10px 15px;
 }
-/* GLOBAL STYLES
-    -------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-body {
-  padding-bottom: 40px;
-  color: #5a5a5a;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', sans-serif;
+}
+section.homepage-content .container.marketing {
+  border-bottom: 1px solid #dfdfe2;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+section.homepage-content .container.marketing .span4 {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+section.homepage-content .container.marketing h2 {
+  font-weight: normal;
+  text-align: center;
+}
+section.homepage-content .container.marketing .span4 p {
+  font-size: 16px;
+  line-height: 27px;
+  color: #888;
+}
+footer.global-header {
+  padding: 30px 0;
+  color: #B9B9B9;
+}
+footer.global-header a {
+  color: #a0a0a0;
 }
 /* CUSTOMIZE THE CAROUSEL
     -------------------------------------------------- */
@@ -111,24 +138,6 @@ body {
 }
 .carousel-caption .btn {
   margin-top: 10px;
-}
-/* MARKETING CONTENT
-    -------------------------------------------------- */
-/* Center align the text within the three columns below the carousel */
-.marketing .span4 {
-  text-align: center;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.marketing h2 {
-  font-weight: normal;
-  text-align: center;
-}
-.marketing .span4 p {
-  /*text-align: left;
-      /*margin-left: 0px;
-      margin-right: 0px;*/
-
 }
 /* Featurettes
     ------------------------- */
