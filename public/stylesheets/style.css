@@ -26,7 +26,7 @@
 }
 header.global-header {
   background: #f3f3f1;
-  border-bottom: 1px solid #B1B1B1;
+  border-bottom: 1px solid #E7E7E7;
 }
 header.global-header .navbar {
   margin: 0;
@@ -61,12 +61,12 @@ header.global-header ul.nav li a {
   color: #404956;
 }
 header.global-header ul.nav li a:hover {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.03);
   color: inherit;
 }
 header.global-header ul.nav li.dropdown.open a.dropdown-toggle,
 header.global-header ul.nav li.dropdown.active a.dropdown-toggle {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.1);
   color: inherit;
 }
 header.global-header ul.nav ul.dropdown-menu {
@@ -75,6 +75,9 @@ header.global-header ul.nav ul.dropdown-menu {
 }
 header.global-header ul.nav ul.dropdown-menu a {
   padding: 10px 15px;
+}
+header.global-header ul.nav ul.dropdown-menu a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 h1,
 h2,
@@ -125,6 +128,14 @@ footer.global-header {
 }
 footer.global-header a {
   color: #a0a0a0;
+}
+section.content {
+  margin: 30px 0;
+}
+section.content .content-wrap p {
+  font-size: 16px;
+  font-family: 'Droid Serif', serif;
+  line-height: 23px;
 }
 /* CUSTOMIZE THE CAROUSEL
     -------------------------------------------------- */
