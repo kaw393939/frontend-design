@@ -45,6 +45,11 @@ header.global-header .brand {
   font-weight: 400;
   text-shadow: none;
 }
+header.global-header .brand:hover {
+  color: #999;
+  position: relative;
+  top: -2px;
+}
 header.global-header ul.nav {
   float: left;
 }
@@ -126,6 +131,14 @@ footer.global-header a {
 /* Carousel base class */
 .carousel {
   margin-bottom: 60px;
+}
+.carousel .carousel-caption .btn {
+  background: #2D87EC;
+  border-radius: 0;
+  border-color: #275B94;
+  padding: 15px 25px;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
 }
 .carousel .container {
   position: relative;

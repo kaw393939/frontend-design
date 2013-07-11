@@ -26,6 +26,12 @@ header.global-header {
         font-family: @fontsans;
         font-weight: 400;
         text-shadow: none;
+
+        &:hover {
+            color: #999;
+            position: relative;
+            top: -2px;
+        }
     }
 
     ul.nav {
@@ -116,9 +122,20 @@ footer.global-header {
     -------------------------------------------------- */
 
     /* Carousel base class */
-    .carousel {
-      margin-bottom: 60px;
+.carousel {
+    margin-bottom: 60px;
+    
+    .carousel-caption {
+        .btn {
+            background: #2D87EC;
+            border-radius: 0;
+            border-color: #275B94;
+            padding: 15px 25px;
+            font-size: 18px;
+            font-family: @fontsans;
+        }
     }
+}
 
     .carousel .container {
       position: relative;
