@@ -1,45 +1,63 @@
-/*
-  Global Variables
- */header.global-header {
-  /* Remove border and change up box shadow for more contrast */
-
-  /* Downsize the brand/project name a bit */
-
-  /* Navbar links: increase padding for taller navbar */
-
-  /* Offset the responsive button for proper vertical alignment */
-
+.show-grid [class*="span"] {
+  background-color: #EEE;
+  text-align: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  min-height: 30px;
+  line-height: 30px;
 }
-header.global-header .navbar-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  margin-top: 20px;
-  margin-bottom: -90px;
-  /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-
+@clear _after;
+/* Reusable things */
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.alignCenter {
+  text-align: center;
+}
+.alignLeft {
+  text-align: left;
+}
+.alignRight {
+  text-align: right;
+}
+header.global-header {
+  background: #f3f3f1;
+}
+header.global-header .navbar {
+  margin: 0;
 }
 header.global-header .navbar .navbar-inner {
-  border: 0;
-  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: none;
+  border: none;
 }
-header.global-header .navbar .brand {
-  padding: 14px 20px 16px;
-  /* Increase vertical padding to match navbar links */
-
-  font-size: 16px;
-  font-weight: bold;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+header.global-header .brand {
+  line-height: 40px;
+  margin-right: 50px;
 }
-header.global-header .navbar .nav > li > a {
-  padding: 15px 20px;
+header.global-header ul.nav {
+  float: left;
 }
-header.global-header .navbar .btn-navbar {
-  margin-top: 10px;
+header.global-header ul.nav li a {
+  padding: 20px 22px;
+  color: #404956;
+}
+header.global-header ul.nav li a:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: inherit;
+}
+header.global-header ul.nav ul.dropdown-menu {
+  border-radius: 0;
+  top: 109%;
+}
+header.global-header ul.nav ul.dropdown-menu a {
+  padding: 10px 15px;
 }
 /* GLOBAL STYLES
     -------------------------------------------------- */
